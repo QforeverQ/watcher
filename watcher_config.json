@@ -1,0 +1,14 @@
+{
+  "api_url": "http://10.214.2.66:5000/api/v1/alert",
+  "mentioned_list": [ "chenxiyue", "zoukun", "gaocong" ],
+  "group": "alpha",
+  "log_file": "./syslog.log",
+  "check_interval": 10,
+  "alert_interval": 30,
+  "regex": {
+    "error": " E ",
+    "warning": " W ",
+    "title": "(?<=Started ).*(?=.)",
+    "failed": "service.failed"
+  }
+}
